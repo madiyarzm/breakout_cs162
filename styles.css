@@ -1,14 +1,14 @@
 /* Типографика и базовая сетка */
 :root {
-  --bg: #0f1115;
-  --surface: #151922;
-  --text: #e6e7eb;
-  --muted: #aeb2bd;
+  --bg: #fafafc;
+  --surface: #ffffff;
+  --text: #1b1d23;
+  --muted: #5a6170;
   --primary: #d4af37; /* золотистый акцент */
-  --primary-contrast: #0b0d12;
-  --card: #1b2030;
-  --border: #2a3142;
-  --error: #ff6b6b;
+  --primary-contrast: #ffffff;
+  --card: #ffffff;
+  --border: #e5e7ef;
+  --error: #c0392b;
 }
 
 * { box-sizing: border-box; }
@@ -49,7 +49,7 @@ p { color: var(--muted); margin: 0 0 16px; }
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(15,17,21,0.7);
+  background: rgba(255,255,255,0.7);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   display: flex;
@@ -80,7 +80,7 @@ p { color: var(--muted); margin: 0 0 16px; }
   padding: 8px 10px;
   border-radius: 6px;
 }
-.nav-links a:hover { color: var(--text); background: rgba(212,175,55,0.08); }
+.nav-links a:hover { color: var(--text); background: rgba(212,175,55,0.12); }
 
 .nav-toggle {
   display: none;
@@ -95,7 +95,7 @@ p { color: var(--muted); margin: 0 0 16px; }
 .site-header { position: relative; }
 .hero {
   min-height: 60vh;
-  background: linear-gradient(180deg, rgba(15,17,21,0.2), var(--bg)), url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(255,255,255,0.35), var(--bg)), url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
   display: grid;
   place-items: center;
   border-bottom: 1px solid var(--border);
@@ -176,7 +176,7 @@ p { color: var(--muted); margin: 0 0 16px; }
 .contact-form textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(212,175,55,0.15); }
 
 /* Футер */
-.footer { border-top: 1px solid var(--border); }
+.footer { border-top: 1px solid var(--border); background: var(--surface); }
 .footer-inner {
   display: flex;
   align-items: center;
@@ -185,7 +185,7 @@ p { color: var(--muted); margin: 0 0 16px; }
 }
 .socials { display: flex; gap: 12px; }
 .socials a { color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 6px 10px; border-radius: 8px; }
-.socials a:hover { color: var(--text); background: rgba(212,175,55,0.08); }
+.socials a:hover { color: var(--text); background: rgba(212,175,55,0.12); }
 
 /* Адаптивность */
 @media (max-width: 900px) {
