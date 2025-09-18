@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delights — Fine Dining Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="home" class="site-header">
+        <nav class="nav">
+            <a href="#home" class="logo">Gourmet Delights</a>
+            <button class="nav-toggle" aria-label="Open menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Gourmet Delights</h1>
+                <p>Refined cuisine, impeccable service, and an ambiance of taste.</p>
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-text">At <strong>Gourmet Delights</strong>, we bring together seasonal produce, modern techniques, and a deep respect for classic cuisine. Our interior embraces a calm, elegant palette, while the team cares for every detail—from the plating to the soundtrack of your evening.</p>
+            </div>
+        </section>
+
+        <section id="menu" class="section menu">
+            <div class="container">
+                <h2 class="section-title">Menu — Highlights</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Beef Carpaccio</h3>
+                        <p>Truffle oil, capers, and Parmesan. A light, elegant start.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Seared Scallops on Creamy Risotto</h3>
+                        <p>Arborio al dente, saffron, and caramelized sea scallops.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Sea Bass Fillet</h3>
+                        <p>Crispy skin, champagne sauce, and young vegetables.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Duck Confit</h3>
+                        <p>Caramelized pears, port wine and rosemary sauce.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Dessert “Chocolate & Salt”</h3>
+                        <p>70% ganache, sea-salt caramel, almond crumble.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container grid-2">
+                <div>
+                    <h2 class="section-title">Contact</h2>
+                    <address class="contact-details">
+                        <p><strong>Address:</strong> 12 Elegance St, Almaty</p>
+                        <p><strong>Phone:</strong> <a href="tel:+77001234567">+7 (700) 123-45-67</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:hello@gourmetdelights.example">hello@gourmetdelights.example</a></p>
+                    </address>
+                </div>
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Gourmet Delights</p>
+            <div class="socials">
+                <a href="#" aria-label="Instagram" title="Instagram">IG</a>
+                <a href="#" aria-label="Facebook" title="Facebook">FB</a>
+                <a href="#" aria-label="Twitter" title="Twitter">X</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const toggle = document.querySelector('.nav-toggle');
+      const links = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => {
+        links.classList.toggle('open');
+      });
+    </script>
+
+    
+</body>
+</html>
+
+
